@@ -23,7 +23,7 @@ typedef void(*void_cb)(void);
 
 /** @brief Check if keyboard connected.
 
-This function offers a check if the keyboard is connected. 
+This function offers a check if the keyboard is connected.
 The read functions will automatically call this function on first use.
 
 @ingroup API
@@ -65,7 +65,7 @@ WOOTINGANALOGSDK_API uint8_t wooting_read_analog(uint8_t row, uint8_t column);
 /** @brief Get the full analog buffer.
 
 This function can be used to get a buffer of all the keys that are pressed up to a maximum of 16 keys. The maximum size of the buffer is 32 bytes (2 bytes * 16 keys)
-The data is ordered as [scan_code0, analog_value0, scan_code1, analog_value1, .... , scan_code15, analog_value15] 
+The data is ordered as [scan_code0, analog_value0, scan_code1, analog_value1, .... , scan_code15, analog_value15]
 The keyboard matrix with scan code indexing can be found in the resources folder.
 
 It is not necessary to initialize the keyboard before reading. If the keyboard is not connected this function will return -1.
